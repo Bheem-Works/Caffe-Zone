@@ -14,7 +14,7 @@ body{
     font-weight: 500;
     align-items:center;
     background-color:#fffcef;
-    height:150vh;
+    height:650vh;
     width:100%;
     /* justify-content:center;
     text-align:center;
@@ -26,8 +26,34 @@ body{
    --lightYellow:#FFCB2D;
 }
 
+/* Fonts variable  */
+:root {
+    /* Font Families */
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Playfair Display', serif;
+    --font-accent: 'Dancing Script', cursive;
+    
+    /* Font Weights */
+    --weight-light: 300;
+    --weight-regular: 400;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+    
+    /* Font Sizes */
+    --size-xs: 0.75rem;    /* 12px */
+    --size-sm: 0.875rem;   /* 14px */
+    --size-base: 1rem;     /* 16px */
+    --size-lg: 1.125rem;   /* 18px */
+    --size-xl: 1.25rem;    /* 20px */
+    --size-2xl: 1.5rem;    /* 24px */
+    --size-3xl: 1.875rem;  /* 30px */
+    --size-4xl: 2.25rem;   /* 36px */
+    --size-5xl: 3rem;      /* 48px */
+  }
+
 /* Header section */
 .header nav{
+    position: static;
     background-color: #FFF8E6;
     padding:20px;
     display:flex;
@@ -137,7 +163,7 @@ body{
     justify-content: flex-end; 
     align-items: flex-end;
     margin-top: -20rem;
-    /* margin-right: 120rem;    */
+    margin-right: 120rem;   
     width: 100%;
     overflow: hidden;
     gap:10px;
@@ -186,3 +212,72 @@ body{
     height: auto;
     display: block; 
 }
+
+/* Serve Sections */
+.serve {
+    background-color:white;
+}
+.serve .serve-text {
+    margin:0px;
+    padding:10px;
+}
+.serve .serve-text #works{
+    margin-top:5rem;
+    align-items: center;
+    text-align: center;
+    color: var(--lightYellow);
+    font-size:var(--size-xl);
+}
+
+.serve .serve-text #serve{
+    margin-top:-1rem;
+    letter-spacing: 2px;
+    font-family:var(--font-primary);
+    font-weight:var (--weight-bold);
+    font-size:var(--size-2xl)
+}
+.serve .serve-text #product{
+    color:gray;
+    font-size: var(--size-xl);
+    font-family:var(--font-primary);
+}
+
+/* serve Img sections */
+.serve .serve-img{
+    display:flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+.serve .serve-img .order-Img {
+    /* margin-left:3rem; */
+}
+
+/* menu */
+.menu-section {
+    background-color:white;
+    padding:10px;
+}
+.menu-section .menu-text {
+    margin:0px;
+    margin-top:7rem;
+}
+.menu-section .menu-text #smMenu{
+    color: var(--lightYellow);
+    font-size:var(--size-xl);
+}
+
+.menu-section .menu-text #bigMenu{
+    margin-top:-1rem;
+    letter-spacing: 2px;
+    font-family:var(--font-primary);
+    font-weight:var (--weight-bold);
+    font-size:var(--size-2xl)
+}
+.menu .menu-text #menuProducts{
+    color:gray;
+    font-size: var(--size-xl);
+    font-family:var(--font-primary);
+}
+
