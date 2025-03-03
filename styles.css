@@ -51,6 +51,11 @@ body{
     --size-5xl: 3rem;      /* 48px */
   }
 
+  /* big */
+  .big{
+    background-color: white;
+  }
+
 /* Header section */
 .header nav{
     position: static;
@@ -365,4 +370,245 @@ body{
 }
 .border .menu:hover{
     background-color: orange;
+}
+
+/* Testimonial sections */
+/* Testimonial Section */
+.testimonial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 7%;
+    gap: 5rem;
+    background-color: #fff;
+}
+
+/* Food Images Container */
+.food-images {
+    flex: 0 0 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 550px;
+}
+
+.food-image-top img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.food-image-bottom {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.food-image-bottom img {
+    width: calc(50% - 0.75rem);
+    height: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Testimonial Content */
+.testimonial-content {
+    flex: 0 0 45%;
+    max-width: 550px;
+}
+
+.subtitle {
+    color: #F9B64B; /* Your light yellow variable */
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.title {
+    color: #222;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+}
+
+/* Testimonial Slider */
+.testimonial-slider {
+    position: relative;
+}
+
+/* Slider Dots */
+.slider-dots {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #DDD;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #F9B64B; /* Your light yellow variable */
+}
+
+/* Testimonial Cards */
+.testimonial-cards {
+    display: flex;
+    gap: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonial-card {
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    min-width: 100%;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.testimonial-card.hidden {
+    display: none;
+}
+
+/* Customer Info */
+.customer-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.customer-image {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.customer-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.customer-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem 0;
+}
+
+/* Rating Stars */
+.rating {
+    display: flex;
+    gap: 2px;
+}
+
+.star {
+    color: #FFD700;
+    font-size: 1.25rem;
+}
+
+.star.half {
+    position: relative;
+    display: inline-block;
+}
+
+.star.half:before {
+    content: "★";
+    position: absolute;
+    color: #FFD700;
+    width: 50%;
+    overflow: hidden;
+}
+
+.star.half:after {
+    content: "★";
+    position: absolute;
+    color: #e0e0e0;
+    width: 50%;
+    left: 50%;
+    overflow: hidden;
+}
+
+/* Testimonial Text */
+.testimonial-text {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Animation for fade in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Marquee animation (optional, can be activated with JavaScript) */
+.marquee {
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* JavaScript for carousel functionality would go here */
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .testimonial {
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .testimonial {
+        flex-direction: column;
+        padding: 4rem 5%;
+    }
+    
+    .food-images, 
+    .testimonial-content {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .food-image-bottom img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .food-image-bottom {
+        flex-direction: column;
+    }
+    
+    .food-image-bottom img {
+        width: 100%;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
 }
