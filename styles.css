@@ -14,7 +14,7 @@ body{
     font-weight: 500;
     align-items:center;
     background-color:#fffcef;
-    height:650vh;
+    height:500vh;
     width:100%;
     /* justify-content:center;
     text-align:center;
@@ -612,3 +612,54 @@ body{
         font-size: 2rem;
     }
 }
+
+/* Banner Sections */
+.bannerSection{
+    margin:0;
+    margin-top:2rem;
+}
+.bannerSection .Bannerimg{
+    background-color:white;
+    padding:0;
+    margin:0;
+}
+
+.bannerSection .Bannerimg img{
+    /* opacity:0.9; */
+    width:85%;
+    margin-bottom:7rem;
+}
+
+.bannerSection .bannerUp #bannerContent {
+    margin-top:-25rem;
+    opacity: 2;
+}
+
+.bannerSection .bannerUp  #bannerContent {
+    font-size:40px;
+    /* opacity:1; */
+    color:white;
+}
+
+.bannerSection .bannerUp #bannerButton {
+
+        margin-top:20px;
+        border-radius:30px;
+        border:2px solid var(--lightYellow);
+        padding:10px 26px;
+        font-size:15px;
+        font-weight:bold;
+        cursor:pointer;
+        font-family: "Poppins", serif;
+        background-color: var(--lightYellow);
+        transition: background-color,color,font-size 0.5s ease;
+        
+    }
+    
+    .bannerSection .bannerUp #bannerButton:hover{
+        background-color:transparent;
+        color:white;
+        font-weight: 600;
+        font-family: "Poppins", serif;
+        font-size:18px;
+    }   
