@@ -255,10 +255,6 @@ body{
     text-align: center;
     align-items: center;
 }
-.serve .serve-img .order-Img {
-    /* margin-left:3rem; */
-}
-
 /* menu */
 .menu-section {
     background-color:white;
@@ -674,9 +670,7 @@ body{
         text-align: center;
         gap:10px;
     }
-    .footerText .one {
 
-    }
     .footerText .one img{
         width:auto;
         text-align:center;
