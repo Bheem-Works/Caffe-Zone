@@ -14,7 +14,7 @@ body{
     font-weight: 500;
     align-items:center;
     background-color:#fffcef;
-    height:500vh;
+    height:495vh;
     width:100%;
     /* justify-content:center;
     text-align:center;
@@ -444,8 +444,7 @@ body{
     gap: 8px;
     margin-bottom: 1.5rem;
 }
-
-.dot {
+ .dot {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -455,7 +454,7 @@ body{
 }
 
 .dot.active {
-    background-color: #F9B64B; /* Your light yellow variable */
+    background-color: #F9B64B; 
 }
 
 /* Testimonial Cards */
@@ -637,8 +636,8 @@ body{
 
 .bannerSection .bannerUp  #bannerContent {
     font-size:40px;
-    /* opacity:1; */
     color:white;
+    /* opacity:1; */
 }
 
 .bannerSection .bannerUp #bannerButton {
@@ -663,3 +662,50 @@ body{
         font-family: "Poppins", serif;
         font-size:18px;
     }   
+
+
+
+    /* footer sections */
+    
+    .footerText {
+        display:flex;
+        margin-top:15rem;
+        justify-content: space-around;
+        text-align: center;
+        gap:10px;
+    }
+    .footerText .one {
+
+    }
+    .footerText .one img{
+        width:auto;
+        text-align:center;
+        justify-content:center;
+    }
+    .footerText .icons {
+        padding:5px;
+        margin:5px;
+    }
+
+    .footerText .icons svg{
+        color:black;
+        transition:color 0.4s ease-in-out;
+    }
+
+    .footerText .icons svg:hover{
+        color:orange;
+    }
+    hr { 
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 1px;
+      } 
+
+      .copyRight {
+        margin-top:2rem;
+        color:gray;
+      }

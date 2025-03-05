@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     dots.forEach((dot, index) => {
         dot.addEventListener('click', () => {
             showCard(index);
-        });
+        }); 
     });
     
     // Auto rotate every 5 seconds
